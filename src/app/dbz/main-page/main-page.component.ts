@@ -14,8 +14,8 @@ export class MainPageComponent implements OnInit {
   }
 
   nuevo: Personaje = {
-    nombre: 'Truncks',
-    poder: 14000
+    nombre: 'Maestro Roshi',
+    poder: 1000
   }
 
   personajes: Personaje[] = [
@@ -28,5 +28,9 @@ export class MainPageComponent implements OnInit {
       poder: 7500
     }
   ]
+
+  agregarNuevoPersonaje(personaje:Personaje){
+    this.personajes.push(personaje);
+  }
 
 }
